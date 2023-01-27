@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-#using ls as a variable stuff
-
-list=$(ls)
-for i in $list
+# Bash script that displays content
+for search in *
 do
-    echo "$i" | cut -d'-' -f 2
+	echo "$search" | cut -d "-" -f 2
 done
